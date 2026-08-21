@@ -23,6 +23,7 @@
   <img alt="Open-PSA MEF" src="https://img.shields.io/badge/format-Open--PSA%20MEF-6E56CF?style=flat-square" />
   <img alt="SCRAM engine" src="https://img.shields.io/badge/engine-SCRAM%20CLI-2E9E5B?style=flat-square" />
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-555?style=flat-square" />
+  <a href="https://doi.org/10.5281/zenodo.22039061"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22039061.svg" /></a>
 </p>
 
 ## Screenshots
@@ -197,3 +198,10 @@ LibRE FTA's own source code is [MIT licensed](LICENSE). The bundled
 is a separate program under its own authors' GPLv3 license — see
 [`LICENSE-SCRAM`](src-tauri/resources/scram/LICENSE-SCRAM) — invoked as a
 subprocess, not linked into this app's code.
+
+## 📖 Citation
+
+If you use LibRE FTA in your work, please cite it — see
+[`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button on the
+repo sidebar reads this automatically), or cite the archived release
+directly via its DOI: [10.5281/zenodo.22039061](https://doi.org/10.5281/zenodo.22039061).

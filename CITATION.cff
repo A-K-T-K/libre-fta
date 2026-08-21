@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "LibRE FTA"
+type: software
+authors:
+  - family-names: "T K"
+    given-names: "Abhinav Krishnan"
+version: 0.0.1
+date-released: 2026-08-21
+doi: 10.5281/zenodo.22039061
+repository-code: "https://github.com/A-K-T-K/libre-fta"
+license: MIT
+abstract: >-
+  A desktop fault tree analysis (FTA) editor with real SCRAM PRA engine
+  integration and Open-PSA Model Exchange Format import/export.
