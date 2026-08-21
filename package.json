@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "tauri": "tauri",
-    "build:portable": "tauri build -- --no-bundle && powershell -ExecutionPolicy Bypass -File scripts/package-portable.ps1"
+    "build:portable": "tauri build --no-bundle && powershell -ExecutionPolicy Bypass -File scripts/package-portable.ps1"
   },
   "dependencies": {
     "@fluentui/react-components": "^9.74.6",

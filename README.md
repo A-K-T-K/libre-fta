@@ -66,7 +66,7 @@ everything it needs next to it — `WebView2Loader.dll` and the bundled SCRAM
 CLI's `resources/` folder — into `dist-portable/LibRE-FTA-portable-win64.zip`.
 Extract it anywhere (a folder, a USB stick) and run `LibRE FTA.exe` directly;
 no installer, no admin rights, no separate SCRAM setup. Under the hood it's
-just `tauri build -- --no-bundle` (skips the MSI/NSIS installer step) followed
+just `tauri build --no-bundle` (skips the MSI/NSIS installer step) followed
 by [`scripts/package-portable.ps1`](scripts/package-portable.ps1), which does
 the copying/zipping.
 
