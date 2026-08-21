@@ -1,12 +1,3 @@
----
-layout: home
-title: Home
-nav_order: 1
-description: >-
-  A desktop fault tree analysis (FTA) editor with real SCRAM PRA engine
-  integration and Open-PSA Model Exchange Format import/export.
-permalink: /
----
 
 <p align="center">
   <img src="assets/images/logo.svg" width="88" height="88" alt="LibRE FTA logo" style="background:#fff;border-radius:20px;padding:10px" />
