@@ -191,6 +191,13 @@ src-tauri/        Rust shell: SCRAM process invocation, file dialogs, fs access,
   `src-tauri/capabilities/default.json` — see
   [DOCUMENTATION.md](DOCUMENTATION.md#architecture-notes).
 
+## 🐛 Found a bug?
+
+Please [open an issue](https://github.com/A-K-T-K/libre-fta/issues) —
+include what you did, what happened, and what you expected. For a crash or a
+SCRAM-related problem, the app's status bar/console output is helpful context
+to paste in too.
+
 ## ⚖️ License
 
 LibRE FTA's own source code is [MIT licensed](LICENSE). The bundled
