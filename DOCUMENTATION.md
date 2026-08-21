@@ -459,8 +459,6 @@ built-in-engine/SCRAM-CLI coverage and cross-checked numeric results. Summary:
 
 ## What is pending / not yet done
 
-- **This project is not yet a git repository** — no commit history exists yet;
-  that's a decision left to whoever owns this checkout.
 - **Bundled SCRAM CLI is Windows-only for now** — macOS/Linux builds still
   rely on PATH auto-detection or manual folder selection until an equivalent
   binary is built and bundled for those platforms.

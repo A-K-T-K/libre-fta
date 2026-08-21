@@ -5,11 +5,8 @@
 # Local preview:  bundle install && bundle exec jekyll serve
 # Hosting:        GitHub repo settings → Pages → Deploy from a branch → root.
 #
-# NOTE: once this repo has a GitHub remote, uncomment and set `url`/`baseurl`
-# below to match — a project page served at https://<user>.github.io/<repo>/
-# needs baseurl set to "/<repo>", or asset/nav links will 404.
-# url: "https://<user>.github.io"
-# baseurl: "/<repo>"
+url: "https://a-k-t-k.github.io"
+baseurl: "/libre-fta"
 
 title: LibRE FTA
 description: >-
@@ -28,9 +25,8 @@ logo: "/assets/images/logo.svg"
 favicon_ico: "/assets/images/favicon.ico"
 
 aux_links:
-  # "#" is a placeholder — update once this repo has a real GitHub remote.
   "LibRE FTA on GitHub":
-    - "#"
+    - "https://github.com/A-K-T-K/libre-fta"
   "SCRAM (rakhimov/scram)":
     - "https://github.com/rakhimov/scram"
 aux_links_new_tab: true
