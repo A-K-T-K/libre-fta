@@ -1,0 +1,80 @@
+# Jekyll config for the documentation site (GitHub Pages), built from this
+# same repo root — the actual app source (src/, src-tauri/, etc.) is
+# excluded below so this never interferes with the Vite/Tauri build.
+#
+# Local preview:  bundle install && bundle exec jekyll serve
+# Hosting:        GitHub repo settings → Pages → Deploy from a branch → root.
+#
+# NOTE: once this repo has a GitHub remote, uncomment and set `url`/`baseurl`
+# below to match — a project page served at https://<user>.github.io/<repo>/
+# needs baseurl set to "/<repo>", or asset/nav links will 404.
+# url: "https://<user>.github.io"
+# baseurl: "/<repo>"
+
+title: LibRE FTA
+description: >-
+  A desktop fault tree analysis (FTA) editor with real SCRAM PRA engine
+  integration and Open-PSA Model Exchange Format import/export.
+tagline: Fault tree analysis, done properly.
+
+remote_theme: just-the-docs/just-the-docs
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+logo: "/assets/images/logo.svg"
+favicon_ico: "/assets/images/favicon.ico"
+
+aux_links:
+  # "#" is a placeholder — update once this repo has a real GitHub remote.
+  "LibRE FTA on GitHub":
+    - "#"
+  "SCRAM (rakhimov/scram)":
+    - "https://github.com/rakhimov/scram"
+aux_links_new_tab: true
+
+footer_content: >-
+  LibRE FTA — a desktop fault tree analysis editor. SCRAM integration targets
+  <a href="https://github.com/rakhimov/scram">rakhimov/scram</a>, licensed
+  GPLv3.
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: false
+
+readme_index:
+  with_frontmatter: true
+
+# Everything below is the actual desktop app's source — not part of the
+# documentation site, so Jekyll never touches it.
+exclude:
+  - src/
+  - src-tauri/
+  - public/
+  - node_modules/
+  - dist/
+  - dist-ssr/
+  - .claude/
+  - .git/
+  - .github/
+  - index.html
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - tsconfig.app.json
+  - tsconfig.node.json
+  - vite.config.ts
+  - postcss.config.js
+  - .oxlintrc.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

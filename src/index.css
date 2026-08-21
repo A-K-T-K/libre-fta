@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: oklch(0.99 0.002 260);
+  --foreground: oklch(0.19 0.01 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.19 0.01 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.19 0.01 260);
+  --primary: oklch(0.55 0.18 255);
+  --primary-foreground: oklch(0.98 0.01 255);
+  --secondary: oklch(0.95 0.01 260);
+  --secondary-foreground: oklch(0.25 0.02 260);
+  --muted: oklch(0.96 0.005 260);
+  --muted-foreground: oklch(0.5 0.01 260);
+  --accent: oklch(0.94 0.03 255);
+  --accent-foreground: oklch(0.25 0.05 255);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.98 0.01 27);
+  --warning: oklch(0.75 0.16 75);
+  --warning-foreground: oklch(0.2 0.05 75);
+  --success: oklch(0.6 0.15 145);
+  --success-foreground: oklch(0.98 0.01 145);
+  --border: oklch(0.9 0.005 260);
+  --input: oklch(0.9 0.005 260);
+  --ring: oklch(0.55 0.18 255);
+  --radius: 0.55rem;
+
+  --canvas-dot: oklch(0.88 0.005 260);
+  --canvas-bg: oklch(0.975 0.003 260);
+  --gate-fill: oklch(0.98 0.005 260);
+  --gate-stroke: oklch(0.35 0.02 260);
+  --event-basic: oklch(0.65 0.17 25);
+  --event-undeveloped: oklch(0.7 0.14 85);
+  --event-house: oklch(0.6 0.13 200);
+  --event-conditional: oklch(0.62 0.16 300);
+  --event-transfer: oklch(0.5 0.14 230);
+  --selection-glow: var(--primary);
+}
+
+.dark {
+  --background: oklch(0.17 0.008 260);
+  --foreground: oklch(0.93 0.005 260);
+  --card: oklch(0.21 0.01 260);
+  --card-foreground: oklch(0.93 0.005 260);
+  --popover: oklch(0.21 0.01 260);
+  --popover-foreground: oklch(0.93 0.005 260);
+  --primary: oklch(0.7 0.16 255);
+  --primary-foreground: oklch(0.15 0.02 255);
+  --secondary: oklch(0.27 0.01 260);
+  --secondary-foreground: oklch(0.9 0.005 260);
+  --muted: oklch(0.25 0.01 260);
+  --muted-foreground: oklch(0.65 0.01 260);
+  --accent: oklch(0.3 0.03 255);
+  --accent-foreground: oklch(0.9 0.03 255);
+  --destructive: oklch(0.65 0.2 27);
+  --destructive-foreground: oklch(0.15 0.02 27);
+  --warning: oklch(0.75 0.15 75);
+  --warning-foreground: oklch(0.15 0.03 75);
+  --success: oklch(0.68 0.15 145);
+  --success-foreground: oklch(0.15 0.03 145);
+  --border: oklch(0.32 0.01 260);
+  --input: oklch(0.32 0.01 260);
+  --ring: oklch(0.7 0.16 255);
+
+  --canvas-dot: oklch(0.3 0.008 260);
+  --canvas-bg: oklch(0.155 0.008 260);
+  --gate-fill: oklch(0.24 0.01 260);
+  --gate-stroke: oklch(0.8 0.01 260);
+  --event-basic: oklch(0.68 0.17 25);
+  --event-undeveloped: oklch(0.75 0.13 85);
+  --event-house: oklch(0.68 0.12 200);
+  --event-conditional: oklch(0.7 0.15 300);
+  --event-transfer: oklch(0.62 0.13 230);
+}
+
+@theme inline {
+  /* Explicit modern UI stack (native-feeling on both Windows and macOS)
+     instead of relying on Tailwind's implicit default — every plain-text
+     number/label in the app uses this now; `font-mono` is reserved
+     exclusively for Open-PSA identifiers (the one genuinely code-like
+     value in this app), not stats, probabilities, or shortcut hints. */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+/* React Flow's Controls (zoom in/out/fit/lock, bottom-left) ship with a
+   hardcoded white/light styling that never adapted to this app's theme —
+   restyle it from the same tokens as everything else on the canvas.
+   Doubled-up class selectors (rather than a single `.react-flow__…` class,
+   same specificity as React Flow's own rules) so this reliably wins
+   regardless of CSS source order — `@xyflow/react/dist/style.css` is
+   imported from a component file and can end up injected after this
+   sheet, in which case equal-specificity rules would otherwise lose. */
+.react-flow__controls.react-flow__controls {
+  box-shadow: none;
+}
+.react-flow__controls-button.react-flow__controls-button {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  fill: var(--foreground);
+  color: var(--foreground);
+}
+.react-flow__controls-button.react-flow__controls-button:hover {
+  background: var(--accent);
+}
+.react-flow__controls-button.react-flow__controls-button:last-child {
+  border-bottom: none;
+}
+.react-flow__controls-button.react-flow__controls-button svg {
+  fill: var(--foreground);
+}
+.react-flow__controls-button.react-flow__controls-button[disabled] {
+  fill: var(--muted-foreground);
+  color: var(--muted-foreground);
+}
+.react-flow__controls-button.react-flow__controls-button[disabled] svg {
+  fill: var(--muted-foreground);
+}
