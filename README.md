@@ -189,3 +189,11 @@ src-tauri/        Rust shell: SCRAM process invocation, file dialogs, fs access,
   window-close interception require explicit capability grants in
   `src-tauri/capabilities/default.json` — see
   [DOCUMENTATION.md](DOCUMENTATION.md#architecture-notes).
+
+## ⚖️ License
+
+LibRE FTA's own source code is [MIT licensed](LICENSE). The bundled
+[SCRAM](https://github.com/rakhimov/scram) CLI (`src-tauri/resources/scram/`)
+is a separate program under its own authors' GPLv3 license — see
+[`LICENSE-SCRAM`](src-tauri/resources/scram/LICENSE-SCRAM) — invoked as a
+subprocess, not linked into this app's code.
