@@ -31,6 +31,9 @@
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-555?style=flat-square" />
   <a href="https://doi.org/10.5281/zenodo.22039061"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22039061.svg" /></a>
 </p>
+<p align="center">
+  <a href="https://github.com/A-K-T-K/libre-fta/releases/download/v0.0.1/LibRE-FTA-portable-win64.zip"><img alt="Download portable build" src="https://img.shields.io/badge/download-v0.0.1%20portable%20(Windows)-2E9E5B?style=for-the-badge&logo=windows&logoColor=white" /></a>
+</p>
 
 ## What is LibRE FTA?
 
@@ -89,6 +92,9 @@ npm run build:portable  # Windows: a no-installer, no-admin portable .exe (see b
 ```
 
 ### 📦 Portable build (Windows)
+
+**⬇️ [Download v0.0.1 — LibRE-FTA-portable-win64.zip](https://github.com/A-K-T-K/libre-fta/releases/download/v0.0.1/LibRE-FTA-portable-win64.zip)**
+(or browse [all releases](https://github.com/A-K-T-K/libre-fta/releases))
 
 `npm run build:portable` builds a release binary and zips it up with
 everything it needs next to it — `WebView2Loader.dll` and the bundled SCRAM
