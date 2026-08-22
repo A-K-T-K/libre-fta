@@ -105,7 +105,7 @@ When run inside the Tauri shell **and** a real SCRAM binary is available (see
 below), it shells out to the real engine instead
 (`src-tauri/src/lib.rs`, `src/lib/scram/runner.ts`) for exact BDD/ZBDD-based
 results, parsing its XML report (`src/lib/scram/reportParser.ts` — verified
-against real SCRAM output, see [CHECKS_REPORT.md](CHECKS_REPORT.md)).
+against real SCRAM output, see [CHECKS_REPORT.md](docs/checks-report.md)).
 
 ## 🔍 Pointing the app at SCRAM
 
@@ -176,8 +176,8 @@ Click the **SCRAM CLI detected** / **Built-in engine** badge in the status bar
 - **Auto-detect** button re-runs the bundled → `PATH` search at any time, e.g.
   after installing SCRAM while the app was already open.
 
-See [DOCUMENTATION.md](DOCUMENTATION.md#scram-cli-integration) for the full
-technical detail, and [CHECKS_REPORT.md](CHECKS_REPORT.md) for what's been
+See [SCRAM CLI integration](docs/documentation/scram-cli-integration.md) for the full
+technical detail, and [CHECKS_REPORT.md](docs/checks-report.md) for what's been
 verified against a real broken-install checkout.
 
 ## ❓ Frequently asked questions
@@ -207,9 +207,9 @@ subprocess.
 
 ## 📚 Documentation
 
-- **[DOCUMENTATION.md](DOCUMENTATION.md)** — the full reference: every feature,
+- **[Documentation](docs/documentation.md)** — the full reference: every feature,
   current limitations, and what has/hasn't been tested.
-- **[CHECKS_REPORT.md](CHECKS_REPORT.md)** — results of the most recent
+- **[CHECKS_REPORT.md](docs/checks-report.md)** — results of the most recent
   verification pass against real SCRAM benchmark models.
 
 ## 🗂️ Project layout
@@ -242,7 +242,7 @@ src-tauri/        Rust shell: SCRAM process invocation, file dialogs, fs access,
 - Every native OS dialog (file open/save, SCRAM binary picker) and the
   window-close interception require explicit capability grants in
   `src-tauri/capabilities/default.json` — see
-  [DOCUMENTATION.md](DOCUMENTATION.md#architecture-notes).
+  [architecture notes](docs/documentation/architecture-notes.md).
 
 ## 🐛 Found a bug?
 
